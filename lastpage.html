@@ -3,11 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tenkiu</title>
     <link rel="stylesheet" href="css/flower.css" />
+    <script src="js/selections.js"></script>
+    <style>
+      .confirm-button {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        z-index: 1000;
+        background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%);
+        color: white;
+      }
+      
+      .confirm-button:hover {
+        transform: translateX(-50%) translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+      
+      .confirm-button:active {
+        transform: translateX(-50%) translateY(-1px);
+      }
+    </style>
   </head>
   <body>
-    <div id="thankyou"><b>Thank you for being my girlfriend</b></div>
+    <div id="thankyou"><b>Gracias por ser una novia maravillosa y por hacerme feliz cada día</b></div>
     <div class="flower">
       <div class="f-wrapper">
         <div class="flower__line"></div>
@@ -58,5 +87,9 @@
       </div>
       <div class="flower__glass"></div>
     </div>
+    
+    <button class="confirm-button" onclick="sendToWhatsApp('50489749586')">
+      💝 Confirmar Cita
+    </button>
   </body>
 </html>

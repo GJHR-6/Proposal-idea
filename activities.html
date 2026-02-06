@@ -3,30 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Activities</title>
+    <title>actividades</title>
     <link rel="stylesheet" href="css/activities.css" />
+    <script src="js/selections.js"></script>
   </head>
-  <body>
-    <div id="activityquestion"><b>What are we doing after?</b></div>
+  <body onload="restoreCheckboxes('activities')">
+    <div id="activityquestion"><b>¿Qué vamos a hacer después?</b></div>
     <div class="activities-selection">
       <div class="activity-item">
-        <img src="activities/aquarium.jpeg" alt="aquarium" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="aquarium"
-          />aquarium</label
-        >
-      </div>
-      <div class="activity-item">
-        <img src="activities/arcade.jpeg" alt="arcade" />
+        <img src="activities/play.png.avif" alt="arcade" />
         <label
           ><input
             type="checkbox"
             name="activities"
             value="arcade"
-          />arcade</label
+          />Jugamos?</label
         >
       </div>
       <div class="activity-item">
@@ -36,42 +27,42 @@
             type="checkbox"
             name="activities"
             value="cinema"
-          />cinema</label
+          />Vemos una película?</label
         >
       </div>
       <div class="activity-item">
-        <img src="activities/keramika.jpeg" alt="ceramics" />
+        <img src="activities/lego.JPG.webp" alt="ceramics" />
         <label
           ><input
             type="checkbox"
             name="activities"
             value="ceramics"
-          />ceramics</label
+          />Pintamos y terminamos el lego</label
         >
       </div>
       <div class="activity-item">
-        <img src="activities/kunsthalle.jpeg" alt="kunsthalle" />
+        <img src="activities/jean.jpg" alt="kunsthalle" />
         <label
           ><input
             type="checkbox"
             name="activities"
             value="kunsthalle"
-          />exhibition</label
+          />gym</label
         >
       </div>
       <div class="activity-item">
-        <img src="activities/park.jpeg" alt="park.jpeg" />
+        <img src="activities/cardi.jpg" alt="cardio" />
         <label
           ><input
             type="checkbox"
             name="activities"
             value="park.jpeg"
-          />park</label
+          />cardio </label
         >
       </div>
     </div>
-    <button class="button" onclick="location.href='lastpage.html'">
-      Last page ... 
+    <button class="button" onclick="saveActivitySelections(); location.href='lastpage.html';">
+      la próxima es la última, lo prometo...
     </button>
   </body>
 </html>

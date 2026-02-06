@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Selection</title>
+    <title>Pista de comidas</title>
     <link rel="stylesheet" href="css/food.css" />
+    <script src="js/selections.js"></script>
   </head>
-  <body>
+  <body onload="restoreCheckboxes('food')">
     <div id="foodquestion">
-      <b>What food would you like to eat?</b>
+      <b>Sabe usted que vamos a comer? Aquí hay algunas opciones jeje</b>
     </div>
 
     <div class="food-selection">
@@ -20,7 +21,7 @@
             name="food"
             value="Burgers, fries and fried chicken"
           />
-          burgers and fried chicken</label
+          Hamburguesas, papas fritas y pollo frito</label
         >
       </div>
       <div class="food-item">
@@ -32,8 +33,8 @@
       <div class="food-item">
         <img src="food/koreanfood.jpeg" alt="koreanfood" />
         <label
-          ><input type="checkbox" name="food" value="Korean food" /> korean
-          food</label
+          ><input type="checkbox" name="food" value="Korean food" /> comida
+          coreana</label
         >
       </div>
       <div class="food-item">
@@ -46,7 +47,7 @@
       </div>
       <div class="food-item">
         <img src="food/salad.jpeg" alt="salad" />
-        <label><input type="checkbox" name="food" value="salad" /> salad</label>
+        <label><input type="checkbox" name="food" value="salad" /> ensalada</label>
       </div>
       <div class="food-item">
         <img src="food/steak.jpeg" alt="steak" />
@@ -56,9 +57,17 @@
         <img src="food/sushi.jpeg" alt="sushi" />
         <label><input type="checkbox" name="food" value="sushi" /> sushi</label>
       </div>
+      <div class="food-item">
+        <img src="food/Langosta.jpg.avif" alt="Langosta" />
+        <label><input type="checkbox" name="food" value="Langosta" /> Langosta</label>
+      </div>
+      <div class="food-item">
+        <img src="food/kingcrab.jpg.webp" alt="King crab" />
+        <label><input type="checkbox" name="food" value="King crab" /> King crab</label>
+      </div>
     </div>
-    <button class="button" onclick="location.href='dessert.html'">
-      Continue Hihihhh... 
+    <button class="button" onclick="saveFoodSelections(); location.href='dessert.html'">
+      Siga jeje... 
     </button>
   </body>
 </html>
